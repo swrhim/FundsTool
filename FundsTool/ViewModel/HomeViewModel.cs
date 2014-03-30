@@ -8,10 +8,8 @@ namespace FundsTool.ViewModel
         {
             if (IsInDesignMode)
                 _header = "Test";
-            else
-            {
-                _header = "Select";
-            }
+            
+            
         }
 
         #region properties
