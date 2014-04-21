@@ -45,6 +45,7 @@ namespace FundsTool.ViewModel
             SimpleIoc.Default.Register<MainViewModel>();
             SimpleIoc.Default.Register<HomeViewModel>();
             SimpleIoc.Default.Register<PieChartViewModel>();
+            SimpleIoc.Default.Register<UserSettingsViewModel>();
         }
 
         public MainViewModel Main
@@ -70,7 +71,12 @@ namespace FundsTool.ViewModel
                 return ServiceLocator.Current.GetInstance<PieChartViewModel>();
             }
         }
-        
+
+        public UserSettingsViewModel UserSettings
+        {
+            get { return ServiceLocator.Current.GetInstance<UserSettingsViewModel>(); }
+        }
+
         public static void Cleanup()
         {
             // TODO Clear the ViewModels

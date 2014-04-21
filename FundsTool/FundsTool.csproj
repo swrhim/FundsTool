@@ -85,16 +85,19 @@
     <Compile Include="Controls\UserSettings.xaml.cs">
       <DependentUpon>UserSettings.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Model\ModelBase.cs" />
     <Compile Include="Model\Payment.cs" />
     <Compile Include="Controls\PieChart.xaml.cs">
       <DependentUpon>PieChart.xaml</DependentUpon>
     </Compile>
     <Compile Include="Interfaces\ICSVParser.cs" />
-    <Compile Include="Model\Payments.cs" />
+    <Compile Include="Model\PaymentsDao.cs" />
+    <Compile Include="Model\UserSettingItem.cs" />
     <Compile Include="Utilities\AmexCSVParser.cs" />
     <Compile Include="ViewModel\HomeViewModel.cs" />
     <Compile Include="ViewModel\MainViewModel.cs" />
     <Compile Include="ViewModel\PieChartViewModel.cs" />
+    <Compile Include="ViewModel\UserSettingsViewModel.cs" />
     <Compile Include="ViewModel\ViewModelLocator.cs" />
     <Page Include="Controls\UserSettings.xaml">
       <SubType>Designer</SubType>
